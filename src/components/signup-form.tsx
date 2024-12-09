@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -54,9 +55,9 @@ export default function SignupForm() {
           </div>
           <div className="mt-4 text-center text-sm">
             Already have an account?{" "}
-            <a href="#" className="underline">
+            <Link to="/login" className="underline">
               Log in
-            </a>
+            </Link>
           </div>
         </form>
       </CardContent>

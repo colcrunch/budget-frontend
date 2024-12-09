@@ -1,13 +1,14 @@
-import { Button } from "@/components/ui/button"
+import { Link } from "react-router";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export function LoginForm() {
   return (
@@ -47,11 +48,11 @@ export function LoginForm() {
         </div>
         <div className="mt-4 text-center text-sm">
           Don&apos;t have an account?{" "}
-          <a href="#" className="underline">
+          <Link to="/signup" className="underline">
             Sign up
-          </a>
+          </Link>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
